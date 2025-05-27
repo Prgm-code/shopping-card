@@ -1,0 +1,452 @@
+[
+  {
+    "id": "prod-001",
+    "name": "Raspberry Pi 4 Model B (4 GB)",
+    "description": "Placa base de un solo tablero con procesador Broadcom BCM2711 y 4 GB de RAM LPDDR4.",
+    "price": 55.0,
+    "currency": "USD",
+    "availability": 30,
+    "imageUrl": "https://m.media-amazon.com/images/I/71pQGg91BKL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-002",
+    "name": "PlayStation 5 Standard Edition",
+    "description": "Consola de videojuegos de nueva generación, soporte 4K, SSD de ultra alta velocidad y mando DualSense.",
+    "price": 499.99,
+    "currency": "USD",
+    "availability": 15,
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-listing-01-en-24sep20?$4k$"
+  },
+  {
+    "id": "prod-003",
+    "name": "Bose QuietComfort 35 II",
+    "description": "Auriculares inalámbricos con cancelación de ruido, control por voz y hasta 20 horas de batería.",
+    "price": 299.0,
+    "currency": "USD",
+    "availability": 20,
+    "imageUrl": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/headphones/qc35_ii/product_silo_images/qc35_ii_black_EC_hero.psd/jcr:content/renditions/cq5dam.web.1280.1280.png"
+  },
+  {
+    "id": "prod-004",
+    "name": "DJI Mini 3 Pro",
+    "description": "Drone compacto y plegable con cámara 4K HDR, detección de obstáculos tridireccional y hasta 34 minutos de vuelo.",
+    "price": 749.0,
+    "currency": "USD",
+    "availability": 12,
+    "imageUrl": "https://m.media-amazon.com/images/I/61Y1t2iC-gL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-005",
+    "name": "MacBook Air (M2, 2022)",
+    "description": "Portátil ultraligero con chip Apple M2, pantalla Liquid Retina de 13.6″, MagSafe y hasta 18 horas de batería.",
+    "price": 1099.0,
+    "currency": "USD",
+    "availability": 8,
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-select-202206?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1653084003412"
+  },
+  {
+    "id": "prod-006",
+    "name": "Logitech MX Master 3S",
+    "description": "Ratón inalámbrico de alta precisión con desplazamiento MagSpeed silencioso y sensor de 8000 DPI.",
+    "price": 99.99,
+    "currency": "USD",
+    "availability": 25,
+    "imageUrl": "https://resource.logitech.com/content/dam/logi/en/products/mice/mx-master-3s/gallery/mx-master-3s-mouse-top-view-graphite.png"
+  },
+  {
+    "id": "prod-007",
+    "name": "Anker PowerCore III Elite 25600mAh",
+    "description": "Batería externa de alta capacidad con 25600 mAh, 60W PD para laptops y múltiples puertos.",
+    "price": 129.99,
+    "currency": "USD",
+    "availability": 40,
+    "imageUrl": "https://m.media-amazon.com/images/I/61TE1tW1gqL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-008",
+    "name": "Samsung T7 Shield Portable SSD (1 TB)",
+    "description": "Disco de estado sólido externo robusto, resistente al agua y al polvo, con velocidades de hasta 1050 MB/s.",
+    "price": 159.99,
+    "currency": "USD",
+    "availability": 18,
+    "imageUrl": "https://image.samsung.com/is/image/samsung/p6pim/us/mu-pe1t0s-am/gallery/us-portable-ssd-t7-shield-1tb-mu-pe1t0s-am-531900709?$720_576_PNG$"
+  },
+  {
+    "id": "prod-009",
+    "name": "Apple AirPods Pro (2nd Generation)",
+    "description": "Auriculares inalámbricos con cancelación activa de ruido mejorada, modo transparencia adaptativo y Audio Espacial personalizado.",
+    "price": 249.0,
+    "currency": "USD",
+    "availability": 22,
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1660803502112"
+  },
+  {
+    "id": "prod-010",
+    "name": "Google Pixel 7",
+    "description": "Smartphone con procesador Google Tensor G2, pantalla OLED de 6.3″ y sistema de cámara dual de 50 MP.",
+    "price": 599.0,
+    "currency": "USD",
+    "availability": 14,
+    "imageUrl": "https://m.media-amazon.com/images/I/716n8eAiaaL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-011",
+    "name": "Amazon Kindle Paperwhite (Signature Edition)",
+    "description": "Lector de libros electrónicos con pantalla antirreflejo de 6.8″, luz cálida ajustable, carga inalámbrica y ajuste automático de luz frontal.",
+    "price": 189.99,
+    "currency": "USD",
+    "availability": 35,
+    "imageUrl": "https://m.media-amazon.com/images/I/61N43jK0RGL._AC_SL1000_.jpg"
+  },
+  {
+    "id": "prod-012",
+    "name": "Dell XPS 13 (9315)",
+    "description": "Ultrabook con procesador Intel Core i5/i7 de 12ª generación, pantalla InfinityEdge de 13.4″ y diseño delgado.",
+    "price": 1249.0,
+    "currency": "USD",
+    "availability": 10,
+    "imageUrl": "https://i.dell.com/is/image/Dell/xps-13-9315-laptop-blue-hero-504x350?fmt=pjpg&pscan=auto&scl=1&wid=504&hei=350&qlt=100,0&resMode=sharp2&size=504,350"
+  },
+  {
+    "id": "prod-013",
+    "name": "NVIDIA GeForce RTX 4070 Ti",
+    "description": "Tarjeta gráfica de alto rendimiento con arquitectura Ada Lovelace, ideal para gaming en 4K y Ray Tracing.",
+    "price": 799.0,
+    "currency": "USD",
+    "availability": 7,
+    "imageUrl": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ada/rtx-4070-ti/geforce-rtx-4070-ti-product-gallery-full-screen-3840-1.jpg"
+  },
+  {
+    "id": "prod-014",
+    "name": "AMD Ryzen 7 7700X",
+    "description": "Procesador de 8 núcleos y 16 hilos con arquitectura Zen 4, alto rendimiento para gaming y productividad.",
+    "price": 349.0,
+    "currency": "USD",
+    "availability": 9,
+    "imageUrl": "https://m.media-amazon.com/images/I/61xR7YQxTNL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-015",
+    "name": "Sony WH-1000XM5",
+    "description": "Auriculares supraaurales inalámbricos con la mejor cancelación de ruido de Sony, diseño elegante y llamadas claras.",
+    "price": 398.0,
+    "currency": "USD",
+    "availability": 16,
+    "imageUrl": "https://m.media-amazon.com/images/I/61eR54gS+ZL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-016",
+    "name": "Nintendo Switch OLED Model",
+    "description": "Consola híbrida con pantalla OLED vibrante de 7 pulgadas, base con puerto LAN y 64 GB de almacenamiento interno.",
+    "price": 349.99,
+    "currency": "USD",
+    "availability": 20,
+    "imageUrl": "https://assets.nintendo.com/image/upload/f_auto,q_auto,w_960,h_540/ncom/en_US/switch/site-design-update/oled-model-promo-half"
+  },
+  {
+    "id": "prod-017",
+    "name": "Xbox Series X",
+    "description": "Consola de nueva generación de Microsoft con rendimiento en 4K, Ray Tracing y velocidad de carga ultrarrápida.",
+    "price": 499.99,
+    "currency": "USD",
+    "availability": 18,
+    "imageUrl": "https://compass-ssl.xbox.com/assets/b9/0a/b90ad58f-9950-44a7-87fa-1ee8f0b6a90e.jpg?n=XSX_Page-Hero-0_768x792.jpg"
+  },
+  {
+    "id": "prod-018",
+    "name": "PlayStation 5 Digital Edition",
+    "description": "Versión sin ranura para disco de la PS5, con todas las prestaciones digitales para juegos descargables.",
+    "price": 399.99,
+    "currency": "USD",
+    "availability": 12,
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-digital-edition-product-image-01-en-24sep20?$native--t$"
+  },
+  {
+    "id": "prod-019",
+    "name": "GoPro HERO11 Black",
+    "description": "Cámara de acción con grabación de video 5.3K60 + 2.7K240, fotos de 27MP y estabilización HyperSmooth 5.0.",
+    "price": 399.99,
+    "currency": "USD",
+    "availability": 24,
+    "imageUrl": "https://m.media-amazon.com/images/I/61Zk2U231SL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-020",
+    "name": "Apple iPhone 14",
+    "description": "Smartphone con chip A15 Bionic, pantalla Super Retina XDR de 6.1″, sistema de cámara dual mejorado y Detección de Accidentes.",
+    "price": 799.0,
+    "currency": "USD",
+    "availability": 14,
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-storage-select-202209-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660691647109"
+  },
+  {
+    "id": "prod-021",
+    "name": "Samsung Galaxy S22",
+    "description": "Smartphone con procesador Snapdragon 8 Gen 1, pantalla Dynamic AMOLED 2X de 6.1″ y sistema de cámara Pro-Grade.",
+    "price": 699.99,
+    "currency": "USD",
+    "availability": 17,
+    "imageUrl": "https://images.samsung.com/is/image/samsung/p6pim/levant/sm-s901ezgdmec/gallery/levant-galaxy-s22-s901-412897-sm-s901ezgdmec-530970579?$720_576_PNG$"
+  },
+  {
+    "id": "prod-022",
+    "name": "Amazon Echo Dot (5th Gen)",
+    "description": "Altavoz inteligente con Alexa, audio mejorado, sensor de temperatura y funcionalidad Tap to Skip.",
+    "price": 49.99,
+    "currency": "USD",
+    "availability": 50,
+    "imageUrl": "https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-023",
+    "name": "Google Nest Learning Thermostat",
+    "description": "Termostato inteligente que aprende tus hábitos y ajusta la temperatura para ahorrar energía.",
+    "price": 249.0,
+    "currency": "USD",
+    "availability": 22,
+    "imageUrl": "https://m.media-amazon.com/images/I/71J002xYCFL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-024",
+    "name": "Philips Hue White and Color Ambiance Starter Kit",
+    "description": "Kit de iluminación inteligente con bridge y 3 bombillas que ofrecen millones de colores.",
+    "price": 179.99,
+    "currency": "USD",
+    "availability": 30,
+    "imageUrl": "https://m.media-amazon.com/images/I/71Y324kF3EL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-025",
+    "name": "Synology DS224+",
+    "description": "Servidor NAS de 2 bahías diseñado para pequeñas oficinas y usuarios domésticos, con ranura M.2 NVMe.",
+    "price": 329.99,
+    "currency": "USD",
+    "availability": 9,
+    "imageUrl": "https://global.download.synology.com/download/Product/ProductGallery/DiskStation/DS224+/ds224%2B_001_mid.png"
+  },
+  {
+    "id": "prod-026",
+    "name": "QNAP TS-233",
+    "description": "NAS compacto de 2 bahías para uso doméstico y de oficina con aceleración de IA y transcodificación multimedia.",
+    "price": 219.99,
+    "currency": "USD",
+    "availability": 11,
+    "imageUrl": "https://www.qnap.com/images/products/storage/tower/ts-233/ts-233-front.png"
+  },
+  {
+    "id": "prod-027",
+    "name": "NETGEAR Nighthawk RAXE500",
+    "description": "Router Wi-Fi 6E con triple banda (2.4, 5 y 6 GHz) para las velocidades más rápidas y menor interferencia.",
+    "price": 499.99,
+    "currency": "USD",
+    "availability": 7,
+    "imageUrl": "https://www.netgear.com/images/Products/Networking/WirelessRouters/RAXE500/RAXE500_Hero_Transparent.png"
+  },
+  {
+    "id": "prod-028",
+    "name": "ASUS ROG Strix Z790-E Gaming WiFi",
+    "description": "Placa madre gaming ATX LGA1700 con PCIe 5.0, DDR5, Thunderbolt 4 y Wi-Fi 6E.",
+    "price": 459.99,
+    "currency": "USD",
+    "availability": 5,
+    "imageUrl": "https://dlcdnimgs.asus.com/websites/global/products/kWERP304vSj7jWpS/img/kv/pd.png"
+  },
+  {
+    "id": "prod-029",
+    "name": "Corsair Vengeance RGB Pro 16 GB (2×8)",
+    "description": "Kit de memoria DDR4 3600 MHz con iluminación RGB personalizable.",
+    "price": 99.99,
+    "currency": "USD",
+    "availability": 26,
+    "imageUrl": "https://www.corsair.com/corsairmedia/sys_master/productcontent/CMW16GX4M2Z3600C18-Vengeance-RGB-PRO-Gallery-01.png"
+  },
+  {
+    "id": "prod-030",
+    "name": "Samsung 980 Pro SSD 1 TB NVMe M.2",
+    "description": "Unidad SSD NVMe PCIe 4.0 de alto rendimiento con velocidades de lectura hasta 7,000 MB/s.",
+    "price": 129.99,
+    "currency": "USD",
+    "availability": 19,
+    "imageUrl": "https://image.samsung.com/is/image/samsung/p6pim/global/mz-v8p1t0bw/gallery/global-980-pro-nvme-m2-ssd-1tb-mz-v8p1t0bw-393216960?$720_576_PNG$"
+  },
+  {
+    "id": "prod-031",
+    "name": "WD My Passport 5 TB",
+    "description": "Disco duro externo portátil con gran capacidad, cifrado de hardware y software de backup.",
+    "price": 129.99,
+    "currency": "USD",
+    "availability": 21,
+    "imageUrl": "https://m.media-amazon.com/images/I/910Ktxm+jBL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-032",
+    "name": "Seagate Portable 5 TB External Hard Drive",
+    "description": "HDD externo simple y confiable con conexión USB 3.0 para transferencias rápidas.",
+    "price": 119.99,
+    "currency": "USD",
+    "availability": 17,
+    "imageUrl": "https://m.media-amazon.com/images/I/81tjLksKixL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-033",
+    "name": "Noctua NH-U12A",
+    "description": "Disipador de aire de torre única con ventiladores NF-A12x25 para excelente rendimiento de enfriamiento.",
+    "price": 99.99,
+    "currency": "USD",
+    "availability": 14,
+    "imageUrl": "https://noctua.at/pub/media/catalog/product/n/h/nh_u12a_chromax_black_1_1.jpg"
+  },
+  {
+    "id": "prod-034",
+    "name": "Corsair iCUE H150i Elite Capellix",
+    "description": "Refrigeración líquida AIO de 360 mm con 3 ventiladores ML RGB y pantalla de visualización personalizable.",
+    "price": 189.99,
+    "currency": "USD",
+    "availability": 13,
+    "imageUrl": "https://www.corsair.com/corsairmedia/sys_master/productcontent/CW-9060051-WW-H150i_ELITE_CAPELLIX-Gallery-01.png"
+  },
+  {
+    "id": "prod-035",
+    "name": "Elgato Stream Deck MK.2",
+    "description": "Controlador de teclas programables con 15 teclas LCD personalizables para optimizar el flujo de trabajo.",
+    "price": 149.99,
+    "currency": "USD",
+    "availability": 18,
+    "imageUrl": "https://m.media-amazon.com/images/I/71gC9Y9Y0NL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-036",
+    "name": "Logitech C922 Pro Stream Webcam",
+    "description": "Webcam Full HD 1080p a 30 fps o 720p a 60 fps, ideal para streaming, con corrección de luz y enfoque automático.",
+    "price": 89.99,
+    "currency": "USD",
+    "availability": 24,
+    "imageUrl": "https://resource.logitech.com/content/dam/logi/en/products/webcams/c922/gallery/c922-gallery-1.png"
+  },
+  {
+    "id": "prod-037",
+    "name": "Blue Snowball iCE USB Microphone",
+    "description": "Micrófono USB plug-and-play con patrón polar cardioide, ideal para podcasts, streaming y grabación de voz.",
+    "price": 49.99,
+    "currency": "USD",
+    "availability": 20,
+    "imageUrl": "https://m.media-amazon.com/images/I/61XN0E9iLPL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-038",
+    "name": "Rode VideoMicro Compact On-Camera Microphone",
+    "description": "Micrófono compacto direccional para cámaras, mejora la calidad de audio para video.",
+    "price": 59.0,
+    "currency": "USD",
+    "availability": 16,
+    "imageUrl": "https://m.media-amazon.com/images/I/71B4gX0AsOL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-039",
+    "name": "Shure MV7 USB Podcast Microphone",
+    "description": "Micrófono dinámico híbrido USB/XLR, inspirado en el SM7B, con controles integrados y modo automático.",
+    "price": 249.0,
+    "currency": "USD",
+    "availability": 8,
+    "imageUrl": "https://m.media-amazon.com/images/I/71ZfG-iS6eGL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-040",
+    "name": "Meta Quest 3",
+    "description": "Gafas de realidad virtual y mixta de última generación con mejor rendimiento y visuales.",
+    "price": 499.0,
+    "currency": "USD",
+    "availability": 18,
+    "imageUrl": "https://m.media-amazon.com/images/I/61Y3SaG3gNL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-041",
+    "name": "HTC VIVE Pro 2",
+    "description": "Sistema de realidad virtual de alta resolución (5K) y amplio campo de visión (120°).",
+    "price": 1399.0,
+    "currency": "USD",
+    "availability": 5,
+    "imageUrl": "https://www.vive.com/media/filer_public/1a/5a/1a5a974d-c374-4954-873a-8b01dd49aac9/vivepro2-headset-front.png"
+  },
+  {
+    "id": "prod-042",
+    "name": "Valve Index Full Kit",
+    "description": "Kit completo de realidad virtual de alta fidelidad que incluye headset, controladores Knuckles y estaciones base.",
+    "price": 999.0,
+    "currency": "USD",
+    "availability": 4,
+    "imageUrl": "https://cdn.cloudflare.steamstatic.com/steam/apps/1059530/header.jpg?t=1603390909"
+  },
+  {
+    "id": "prod-043",
+    "name": "Samsung Galaxy Tab S8",
+    "description": "Tablet Android con procesador Snapdragon 8 Gen 1, pantalla TFT de 11″ y S Pen incluido.",
+    "price": 699.99,
+    "currency": "USD",
+    "availability": 12,
+    "imageUrl": "https://images.samsung.com/is/image/samsung/p6pim/levant/sm-x700nzabmec/gallery/levant-galaxy-tab-s8-wifi-x700-sm-x700nzabmec-530904088?$720_576_PNG$"
+  },
+  {
+    "id": "prod-044",
+    "name": "Apple iPad Air (5th Generation)",
+    "description": "Tablet con chip M1, pantalla Liquid Retina de 10.9″, Touch ID y compatibilidad con Apple Pencil (2ª generación).",
+    "price": 599.0,
+    "currency": "USD",
+    "availability": 9,
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-purple-202203?wid=940&hei=1112&fmt=png-alpha&.v=1645066212029"
+  },
+  {
+    "id": "prod-045",
+    "name": "Microsoft Surface Laptop 5",
+    "description": "Portátil delgado y ligero con procesador Intel Core i5/i7 de 12ª generación y pantalla táctil PixelSense.",
+    "price": 999.0,
+    "currency": "USD",
+    "availability": 7,
+    "imageUrl": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE552q3?ver=e580&q=90&m=6&h=705&w=1253&b=%23FFFFFFFF&f=jpg&o=f&p=140&aim=true"
+  },
+  {
+    "id": "prod-046",
+    "name": "Anker Soundcore Motion+",
+    "description": "Altavoz Bluetooth con audio de alta fidelidad (Hi-Res), bajos profundos y resistencia al agua IPX7.",
+    "price": 99.99,
+    "currency": "USD",
+    "availability": 28,
+    "imageUrl": "https://m.media-amazon.com/images/I/71zDWbXAPYL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-047",
+    "name": "Anker Nano II 65W USB-C Charger",
+    "description": "Cargador GaN compacto de 65W con tecnología PowerIQ 3.0 para cargar rápidamente laptops, tablets y teléfonos.",
+    "price": 49.99,
+    "currency": "USD",
+    "availability": 45,
+    "imageUrl": "https://m.media-amazon.com/images/I/519b6T7WvUL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-048",
+    "name": "Tile Pro (2022)",
+    "description": "Localizador bluetooth con mayor alcance (hasta 400 ft) y volumen, reemplazo de batería.",
+    "price": 34.99,
+    "currency": "USD",
+    "availability": 30,
+    "imageUrl": "https://m.media-amazon.com/images/I/61j0b7HqNIL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "prod-049",
+    "name": "Wyze Cam v4",
+    "description": "Cámara de seguridad 2K con lente gran angular, visión nocturna a color y detección de movimiento AI.",
+    "price": 45.98,
+    "currency": "USD",
+    "availability": 34,
+    "imageUrl": "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1"
+  },
+  {
+    "id": "prod-050",
+    "name": "Ring Video Doorbell 4",
+    "description": "Timbre inteligente con video HD 1080p, Pre-Roll a color (grabación antes de la detección) y batería extraíble.",
+    "price": 219.99,
+    "currency": "USD",
+    "availability": 11,
+    "imageUrl": "https://m.media-amazon.com/images/I/41bRCOL2nfL._AC_SL1000_.jpg"
+  }
+]
