@@ -70,9 +70,29 @@ hover:scale-110
             {/* Columna de contenido: ocupa el resto */}
             <div className="flex flex-col justify-between space-y-4">
               <h3 className="text-xl font-semibold ">{product.title}</h3>
-              <p className="text-lg font-medium text-indigo-600">
-                ${product.price}
-              </p>
+              <div className="flex justify-between align-middle">
+                {" "}
+                <p className="text-lg font-medium text-indigo-600">
+                  ${product.price}
+                </p>{" "}
+                <button
+                  className="
+                   p-2
+                    border 
+                    bg-amber-400
+                     text-purple-800 
+                     transform hover:scale-110     
+                     transition-transform
+                    duration-300
+                    ease-in-out
+                    hover:bg-amber-500
+                    rounded-xl
+                    text-sm
+                    font-semibold"
+                >
+                  Add to card
+                </button>{" "}
+              </div>
               <p className="text-sm  line-clamp-4">{product.description}</p>
             </div>
           </div>
