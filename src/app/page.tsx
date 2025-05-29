@@ -1,6 +1,6 @@
-import ShoppingList from "./componentes/ShoppingList";
+import ShoppìngComponent from "./componentes/ShoppìngComponent";
 
-export default function Home() {
+export default async function Home() {
   // Iniciamos con el mock como valor por defecto
 
   // Intentamos sobreescribir con la llamada remota
@@ -14,14 +14,5 @@ export default function Home() {
   // Si la remota falla, seguimos con el mock
 
   // Devolvemos directamente la promesa que resuelve nuestro JSX
-  return remote.then((products) => (
-    <main className="flex flex-col h-screen items-center justify-center">
-      <header>
-        <h1 className="text-2xl font-bold">Shopping Cart</h1>
-      </header>
-      <section>
-        <ShoppingList products={products} />
-      </section>
-    </main>
-  ));
+  return remote.then((products) => <ShoppìngComponent products={products} />);
 }

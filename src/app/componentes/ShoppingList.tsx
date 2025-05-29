@@ -75,6 +75,7 @@ hover:scale-110
                 <p className="text-lg font-medium text-indigo-600">
                   ${product.price}
                 </p>{" "}
+                <p>{product.category}</p>
                 <button
                   className="
                    p-2
