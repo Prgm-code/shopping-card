@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import ShoppingList from "./ShoppingList";
 import { IProduct } from "./ShoppingList";
 import Header from "@/app/componentes/Header";
+import Footer from "./Footer";
 
-function ShoppìngComponent({ products }: { products: IProduct[] }) {
+function useFilters() {
   const [filters, setFilters] = useState({
     category: "all",
     minPrice: 0,
@@ -18,6 +19,11 @@ function ShoppìngComponent({ products }: { products: IProduct[] }) {
       );
     });
   };
+  return { setFilters, filterProducts, filters };
+}
+
+function ShoppìngComponent({ products }: { products: IProduct[] }) {
+  const { setFilters, filterProducts, filters } = useFilters();
 
   return (
     <main className="flex flex-col h-screen items-center ">
@@ -31,6 +37,8 @@ function ShoppìngComponent({ products }: { products: IProduct[] }) {
       <section>
         <ShoppingList products={filterProducts(products)} />s
       </section>
+
+      <Footer filters={filters} />
     </main>
   );
 }

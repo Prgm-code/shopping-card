@@ -40,6 +40,8 @@ function ShoppingList({ products }: { products: IProduct[] }) {
             gap-6 
             p-6 
             border border-gray-200 
+                          bg-black
+
             rounded-xl 
             shadow-md 
             hover:shadow-lg 
@@ -49,14 +51,18 @@ function ShoppingList({ products }: { products: IProduct[] }) {
           >
             {/* Columna de la imagen: 250px fijos */}
             <div
-              className="w-full h-[250px] relative rounded-lg overflow-hidden
-cursor-pointer
-transform
-hover:scale-110
-    hover:rotate-2  <!-- Aquí añadimos la rotación -->
-    transition-transform
-    duration-300
-    ease-in-out
+              className="w-full h-[250px] 
+              relative 
+              rounded-lg 
+              overflow-hidden
+
+                          cursor-pointer
+                          transform
+                          hover:scale-110
+                          hover:rotate-2  <!-- Aquí añadimos la rotación -->
+                          transition-transform
+                          duration-300
+                          ease-in-out
             "
             >
               <Image
