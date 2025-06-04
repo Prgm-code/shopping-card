@@ -1,4 +1,5 @@
 import ShoppìngComponent from "./componentes/ShoppìngComponent";
+import "./cart.css";
 
 export default async function Home() {
   // Iniciamos con el mock como valor por defecto

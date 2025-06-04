@@ -1,24 +1,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState, useId } from "react";
+import React, { useId } from "react";
+import { useFilters } from "../hooks/usefilters";
 
-function Filters({
-  setFilters,
-}: {
-  setFilters: React.Dispatch<
-    React.SetStateAction<{
-      category: string;
-      minPrice: number;
-    }>
-  >;
-}) {
-  const [minPrice, setMinPrice] = useState(0);
+function Filters() {
+  const { filters, setFilters } = useFilters();
 
   const minPriceFilterId = useId();
   const categoryId = useId();
 
   const handleChangeMinPrice = (event: any) => {
-    setMinPrice(event.target.value);
-    setFilters((prev) => ({
+    // setMinPrice(event.target.value);
+    setFilters((prev: any) => ({
       ...prev,
       minPrice: event.target.value,
     }));
@@ -26,7 +18,7 @@ function Filters({
 
   const handleChangeCategory = (event: any) => {
     console.log(event);
-    setFilters((prev) => ({
+    setFilters((prev: any) => ({
       ...prev,
       category: event.target.value,
     }));
@@ -43,10 +35,10 @@ function Filters({
           id={minPriceFilterId}
           min={0}
           max={1000}
-          value={minPrice}
+          value={filters.minPrice}
           onChange={handleChangeMinPrice}
         />
-        <span>{minPrice}</span>
+        <span>{filters.minPrice}</span>
       </div>
       <div>
         <label htmlFor="category">
