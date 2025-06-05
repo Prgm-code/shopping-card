@@ -1,9 +1,12 @@
 import React, { useId } from "react";
 import { ShoppingCart, BrushCleaningIcon } from "lucide-react";
 import Image from "next/image";
+import { useCart } from "../hooks/useCart";
 
 function Cart() {
   const cartCheckoutId = useId(); // ID único para el checkbox
+
+  const { cart, cleanCart, addToCart } = useCart();
 
   return (
     <>
@@ -21,28 +24,36 @@ function Cart() {
       {/* Carrito */}
       <aside className="cart bg-black p-8 fixed right-0 top-0 w-[200px] transition-all duration-300 hidden">
         <ul>
-          <li className="border-b border-gray-700 pb-4">
-            <div className="relative aspect-[16/9] w-full">
-              <Image
-                src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
-                alt="imagen"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div className="mt-2">
-              <strong className="text-white">Iphone</strong> -{" "}
-              <span className="text-gray-400">$1499</span>
-            </div>
-            <footer className="flex gap-2 justify-center items-center mt-2">
-              <small className="text-gray-400">Qty: 1</small>
-              <button className="p-2 bg-gray-700 hover:bg-gray-500 rounded text-white">
-                +
-              </button>
-            </footer>
-          </li>
+          {cart.map((product) => (
+            <li className="border-b border-gray-700 pb-4" key={product.id}>
+              <div className="relative aspect-[16/9] w-full">
+                <Image
+                  src={product.image}
+                  alt={product.title}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="mt-2">
+                <strong className="text-white">{product.title}</strong> -{" "}
+                <span className="text-gray-400">{product.price}</span>
+              </div>
+              <footer className="flex gap-2 justify-center items-center mt-2">
+                <small className="text-gray-400">Qty: {product.quantity}</small>
+                <button
+                  className="p-2 bg-gray-700 hover:bg-gray-500 rounded text-white"
+                  onClick={() => addToCart(product)}
+                >
+                  +
+                </button>
+              </footer>
+            </li>
+          ))}
         </ul>
-        <button className="p-2 bg-gray-700 hover:bg-gray-500 rounded mt-4">
+        <button
+          className="p-2 bg-gray-700 hover:bg-gray-500 rounded mt-4"
+          onClick={() => cleanCart()}
+        >
           <BrushCleaningIcon className="h-6 w-6 text-white" />
         </button>
       </aside>

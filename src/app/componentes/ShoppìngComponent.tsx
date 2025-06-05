@@ -3,11 +3,12 @@ import React from "react";
 import ShoppingList from "./ShoppingList";
 import { IProduct } from "./ShoppingList";
 import Header from "@/app/componentes/Header";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import { FilterProviders } from "../context/FiltersContext";
 
 import { useFilters } from "../hooks/usefilters";
 import Cart from "./Cart";
+import { CartProvider } from "../context/cartContext";
 
 // Componente que consume el contexto y necesita estar dentro del Provider
 function ShoppìngContent({ products }: { products: IProduct[] }) {
@@ -21,14 +22,16 @@ function ShoppìngContent({ products }: { products: IProduct[] }) {
         <h1 className="text-2xl font-bold p-4 mt-3 text-center">
           Shopping Cart
         </h1>
+
         <Header />
       </header>
-
-      <section>
-        <ShoppingList products={filterProducts(products)} />
-      </section>
-      <Cart />
-      <Footer filters={filters} />
+      <CartProvider>
+        <section>
+          <ShoppingList products={filterProducts(products)} />
+        </section>
+        <Cart />
+        {/* <Footer filters={filters} /> */}
+      </CartProvider>
     </main>
   );
 }

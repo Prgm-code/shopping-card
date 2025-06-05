@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { useCart } from "../hooks/useCart";
 
 /**
  * Representa un producto tal como viene de Fakestore API
@@ -28,12 +29,20 @@ export interface IProduct {
 
 function ShoppingList({ products }: { products: IProduct[] }) {
   console.log(products);
+  const { addToCart, cart, removeFromCart } = useCart();
+
+  const checkProductInCard = (product: IProduct) => {
+    return cart?.some((item) => item.id === product.id) ?? false;
+  };
   return (
     <ul className="w-full max-w-2xl flex flex-col gap-y-4 ">
-      {products.map((product) => (
-        <li key={product.id}>
-          <div
-            className="
+      {products.map((product) => {
+        const isInCart = checkProductInCard(product);
+
+        return (
+          <li key={product.id}>
+            <div
+              className="
             grid 
             grid-cols-1 
             sm:grid-cols-[250px_1fr] 
@@ -48,10 +57,10 @@ function ShoppingList({ products }: { products: IProduct[] }) {
             hover: transform-view
             transition-shadow
          "
-          >
-            {/* Columna de la imagen: 250px fijos */}
-            <div
-              className="w-full h-[250px] 
+            >
+              {/* Columna de la imagen: 250px fijos */}
+              <div
+                className="w-full h-[250px] 
               relative 
               rounded-lg 
               overflow-hidden
@@ -64,26 +73,26 @@ function ShoppingList({ products }: { products: IProduct[] }) {
                           duration-300
                           ease-in-out
             "
-            >
-              <Image
-                src={product.image}
-                alt={product.title}
-                fill
-                className="object-cover"
-              />
-            </div>
+              >
+                <Image
+                  src={product.image}
+                  alt={product.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
 
-            {/* Columna de contenido: ocupa el resto */}
-            <div className="flex flex-col justify-between space-y-4">
-              <h3 className="text-xl font-semibold ">{product.title}</h3>
-              <div className="flex justify-between align-middle">
-                {" "}
-                <p className="text-lg font-medium text-indigo-600">
-                  ${product.price}
-                </p>{" "}
-                <p>{product.category}</p>
-                <button
-                  className="
+              {/* Columna de contenido: ocupa el resto */}
+              <div className="flex flex-col justify-between space-y-4">
+                <h3 className="text-xl font-semibold ">{product.title}</h3>
+                <div className="flex justify-between align-middle">
+                  {" "}
+                  <p className="text-lg font-medium text-indigo-600">
+                    ${product.price}
+                  </p>{" "}
+                  <p>{product.category}</p>
+                  <button
+                    className="
                    p-2
                     border 
                     bg-amber-400
@@ -96,15 +105,23 @@ function ShoppingList({ products }: { products: IProduct[] }) {
                     rounded-xl
                     text-sm
                     font-semibold"
-                >
-                  Add to card
-                </button>{" "}
+                    onClick={() => {
+                      if (isInCart) {
+                        removeFromCart(product);
+                      } else {
+                        addToCart(product);
+                      }
+                    }}
+                  >
+                    {!isInCart ? `Add to Cart` : "Remove from Cart"}
+                  </button>{" "}
+                </div>
+                <p className="text-sm  line-clamp-4">{product.description}</p>
               </div>
-              <p className="text-sm  line-clamp-4">{product.description}</p>
             </div>
-          </div>
-        </li>
-      ))}
+          </li>
+        );
+      })}
     </ul>
   );
 }
